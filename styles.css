@@ -3,8 +3,6 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     margin: 0px;
 }
 
@@ -12,29 +10,15 @@ body {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.header,.hero,
-.footer {
+header,
+.hero,
+footer {
     background-color: #1F2937;
     margin: 0;
-    padding: 0 14px;
 }
 
-.content-2,
-.extras,
-.small-images {
-    display: flex;
-}
-
-.c1-padding {
-    width: 325px;
-    min-width: 30px;
-    flex: auto;
-}
-
-.header-hero {
-    flex-direction: column;
-    width: 100%;
-    flex: auto;
+header {
+    padding: 20px 16px 0px;
 }
 
 ul {
@@ -44,17 +28,20 @@ ul {
     margin: 0px;
     gap: 14px;
     align-items: baseline;
-    max-width: 1280px;
+    max-width: 1100px;
     margin: auto;
-}
-
-.header {
-    padding-top: 20px;
 }
 
 .hero {
     display: flex;
-    padding: 120px 0px;
+    padding: 125px 16px;
+    justify-content: center;
+}
+
+.hero-content {
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
 }
 
 .header-logo,
@@ -68,21 +55,20 @@ ul {
     margin-right: auto;
 }
 
-.hero-main-text {
-    font-size: 48px;
-    font-weight: 900;
-}
-
 .header-link,
 .hero-subtext,
-.footer {
+footer {
     font-size: 18px;
     color: #E5E7EB;
 }
 
 .hero-text {
-    margin-right: 30px;
-    min-width: 300px; 
+    min-width: 338px; 
+}
+
+.hero-main-text {
+    font-size: 48px;
+    font-weight: 900;
 }
 
 .hero-subtext {
@@ -109,11 +95,14 @@ img {
     font-size: 36px;
     font-weight: 900;
     text-align: center;
-    padding: 50px 0px;
+    margin: 50px 0px;
 }
 
-.extras {
-    flex-direction: column;
+.small-images {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    margin: 50px 0px 100px;
 }
 
 .placeholder {
@@ -125,7 +114,7 @@ img {
     height: 180px;
     border-style: solid;
     border-radius: 15px;
-    border-width: 4px;
+    border-width: 6px;
     border-color: #3882F6;
 }
 
@@ -135,7 +124,31 @@ img {
     text-align: center;
 }
 
-.footer {
+.quote-box {
+    background-color: #E5E7EB;
+    padding: 100px;
+}
+
+blockquote {
+    max-width: 1000px;
+    font-size: 36px;
+    font-style: italic;
+    color: #525457;
+    margin: auto;
+}
+
+.quote-author {
+    display: block;
+    font-size: 24px;
+    font-style: normal;
+    color: #1F2947;
+    font-weight: bold;
+    text-align: end;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+footer {
     text-align: center;
     padding: 30px;
 }
